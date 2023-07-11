@@ -1,0 +1,342 @@
+@font-face {
+    font-family: 'Kanit';
+    src: url("../font/Kanit-Regular.ttf");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit';
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.right, .left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.logo{
+    height: 80px;
+}
+
+.logo img{
+    height: 100%;
+}
+
+.line{
+    width: 2px;
+    height: 80%;
+    background-color: black;
+}
+
+.team p{
+    margin: 0;
+    font-size: 12px;
+    line-height: 2;
+}
+.team{
+    display: flex;
+    justify-content: space-between;
+}
+
+.teams{
+    margin: 20px;
+}
+
+.about{
+    margin-right: 30px;
+}
+
+.about a{
+    text-decoration: none;
+    color: black;
+}
+
+.about h4 {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.about h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+.about h4:hover::after {
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 7vh);
+    background: #222429;
+    position: relative;
+}
+
+.logo_content{
+    width: 450px;
+    height: auto;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    z-index: 1;
+}
+
+.logo_content img{
+    width: 100%;
+    filter: blur(5px) brightness(60%);
+}
+
+.footer_down{
+    background: #343a40;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: left;
+    margin: auto;
+}
+
+.text_prime{
+    margin-right: auto;
+}
+
+.text_second{
+    margin-right: auto;
+}
+
+.footer_down{
+    color: white;
+}
+
+.footer_down span{
+    color: #41B883;
+}
+
+.tab_content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 90%;
+    color: white;
+    height: 375px;
+    overflow: auto;
+    padding: 12px;
+}
+
+.tab_content svg{
+    margin-right: 10px;
+}
+
+.text_content_about{
+    margin: 40px;
+    width: 70vw;
+}
+
+.about_two{
+    display: none;
+    height: 15px;
+}
+
+.about_two img{
+    height: 100%;
+}
+
+
+
+.form-add{
+    width: 300px;
+    background: #222429;
+    padding: 60px;
+    border-radius: 12px;
+    border: 1px solid #41B883;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+}
+.group-add{
+    position: relative;
+    padding: 5px;
+    margin-bottom: 2px;
+}
+.input-add {
+    width: 100%;
+    height: 25px;
+    border: none;
+    outline: none;
+    background-color: #262A2F;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 8px;
+
+}
+
+
+
+
+.label-add {
+    display: block;
+    margin-bottom: 10px;
+    position: absolute;
+    left: .5rem;
+    top: .4rem;
+    color: #fff;
+    font-family: "Calibri Light", serif;
+    font-weight: lighter;
+
+}
+.button-add{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+.buttonAdd{
+    color: #fff;
+    background: #41B883;
+    padding: 5px;
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: 1px solid #41B883;
+    border-radius: .2rem;
+    cursor: pointer;
+    margin: 15px;
+    justify-content: center;
+}
+
+.buttonAdd:hover{
+    background: #262A2F;
+    color: #41B883;
+}
+#buttonCancel{
+    color: #fff;
+    background: #FF0E84;
+    padding: 5px;
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    outline: none;
+    border: 1px solid #FF0E84;
+    border-radius: .2rem;
+    cursor: pointer;
+    justify-content: center;
+
+}
+
+#buttonCancel:hover{
+    background: #262A2F;
+    color: #FF0E84;
+}
+
+
+
+@media only screen and (max-width: 1070px){
+    body{
+        height: auto;
+    }
+
+    .nav{
+        flex-direction: column;
+    }
+
+    .nav .about, .line, .team{
+        display: none;
+    }
+
+    .left{
+        margin: 0;
+    }
+
+    .nav .about_two{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        justify-content: flex-end;
+    }
+
+    .content{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .tab_content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo_content{
+        margin: auto;
+        margin-top: 10vh;
+    }
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 160px);
+    margin: 0;
+    background-color: #222429;
+    color: white;
+}
+
+article svg {
+    width: 600px;
+    height: 600px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 12px;
+}
+
+
+tr:nth-child(even) {
+    background-color: #343A40;
+}
+
+.buttonAdd-foot {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+}
