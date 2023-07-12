@@ -17,7 +17,8 @@ export default {
     NavBar,
     MainContent,
     FooterContent,
-  }
+  },
+
 }
 </script>
 

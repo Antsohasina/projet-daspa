@@ -184,7 +184,9 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 3;
+    transition: opacity 0.3s ease-in, transform 0.3s ease-in;
 }
+
 .group-add{
     position: relative;
     padding: 5px;
@@ -339,4 +341,101 @@ tr:nth-child(even) {
     position: absolute;
     left: 20px;
     bottom: 10px;
+}
+
+.tab_content table svg {
+    cursor: pointer;
+}
+
+.minMaxSum {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    margin: 20px;
+}
+
+.minMaxSum-child {
+    margin-left: 20px;
+}
+
+
+.alert{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    text-align: center;
+}
+
+.form-alert{
+    width: 300px;
+    height: 200px;
+    background: #222429;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #41B883;
+}
+.warning{
+    display: flex;
+    justify-content: center;
+
+
+}
+.texte{
+    margin: 10px;
+    font-size: 15px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 30px;
+}
+.buttonCancel2{
+    color: #fff;
+    font-size: 16px;
+    background: #41B883;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: 1px solid #41B883;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+
+.buttonCancel2:hover{
+    background: #262A2F;
+    color: #41B883;
+}
+#buttonDelete{
+    color: #fff;
+    font-size: 16px;
+    background: #FF0E84;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: 1px solid #FF0E84;
+    border-radius: .2rem;
+    cursor: pointer;
+
+}
+
+#buttonDelete:hover{
+    background: #262A2F;
+    color: #FF0E84;
 }

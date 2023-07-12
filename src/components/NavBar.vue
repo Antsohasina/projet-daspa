@@ -1,7 +1,7 @@
 <template>
   <div class="nav">
     <div class="right">
-      <div class="logo"><a href="#"><img src="../assets/images/vue-js.svg" alt=""></a></div>
+      <div class="logo"><a href="#"><img src="../assets/images/stethoscope.svg" alt=""></a></div>
     </div>
     <div class="left">
       <div class="about">
