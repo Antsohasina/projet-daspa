@@ -94,8 +94,13 @@ export default {
     confirmDelete() {
       if (this.medecinToDelete) {
         var url = `http://localhost:3000/medecin/${this.medecinToDelete.numMed}`;
-        axios.delete(url);
-        this.medecinLoad();
+        axios.delete(url)
+            .then(() => {
+              this.medecinLoad();
+            })
+            .catch((error) => {
+              console.error('Axios error:', error);
+            });
       }
       this.cancelDelete();
     },
