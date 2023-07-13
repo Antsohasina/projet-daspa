@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <LoaderComponent/>
     <NavBar/>
     <MainContent/>
     <FooterContent/>
@@ -10,6 +11,7 @@
 import NavBar from "@/components/NavBar";
 import MainContent from "@/components/MainContent";
 import FooterContent from "@/components/FooterContent";
+import LoaderComponent from "@/components/LoaderComponent.vue";
 
 export default {
   name: 'App',
@@ -17,6 +19,7 @@ export default {
     NavBar,
     MainContent,
     FooterContent,
+    LoaderComponent,
   },
 
 }
