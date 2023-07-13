@@ -1,4 +1,5 @@
 <template>
+  <MessageComponent v-if="showMessage" />
   <div class="alert">
     <form class="form-alert">
       <div class="warning">
@@ -24,12 +25,20 @@
 <script>
 export default {
   name: "AlertComponent",
+  data(){
+    return{
+      showMessage:false
+    }
+  },
+  components: {},
+
   methods: {
     cancelClick() {
       this.$emit("cancel");
     },
     deleteClick() {
       this.$emit("confirm");
+      this.showMessage= true;
     },
   },
 }

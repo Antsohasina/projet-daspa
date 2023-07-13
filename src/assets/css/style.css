@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Kanit';
     src: url("../font/Kanit-Regular.ttf");
@@ -438,4 +439,7 @@ tr:nth-child(even) {
 #buttonDelete:hover{
     background: #262A2F;
     color: #FF0E84;
+}
+.red{
+    color: red;
 }
